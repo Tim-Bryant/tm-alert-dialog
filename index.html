@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>弹窗</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--兼容IE9一下浏览器不支持rgba的问题-->
+	<!--[if lte IE 8]>  
+	<style>  
+	.ie8filters{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000); }  
+	</style>  
+	<![endif]-->  
+</head>
+<body>
+<button id="modalBtn" class="button">弹出来</button>
+
+
+<!--弹框部分-->
+<div id="simpleModal" class="modal ie8filters">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="closeBtn">&times;</span>
+			<h2>弹窗的头部</h2>
+		</div>
+		<div class="modal-body">
+			<p>这是一个弹窗效果</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nesciunt minus odio illo dignissimos sapiente laboriosam tempora nulla repellendus saepe quo eum non, maiores, possimus dolorem, cupiditate consequatur doloribus. Perspiciatis?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate officiis, minima iste minus corporis, obcaecati illum debitis aliquam consequatur amet, architecto fugiat iusto ullam error mollitia sint hic assumenda.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam illum ipsa nulla voluptates consectetur obcaecati mollitia id harum quis pariatur, vero, quae animi? Cupiditate officiis sunt adipisci tempora cum.</p>
+		</div>
+		<div class="modal-footer">
+			<h3>弹窗底部</h3>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
